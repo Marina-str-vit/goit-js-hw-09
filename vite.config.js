@@ -9,7 +9,7 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
-    root: 'src/public',
+    root: 'src/',
     build: {
       sourcemap: true,
       rollupOptions: {
@@ -39,7 +39,7 @@ export default defineConfig(({ command }) => {
     },
     plugins: [
       injectHTML(),
-      FullReload(['./src/**/**.html']),
+      FullReload(['./src/*.html']),
       SortCss({
         sort: 'mobile-first',
       }),
