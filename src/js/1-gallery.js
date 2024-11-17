@@ -1,11 +1,10 @@
-// import arrGallery from ".."
+import arrGalleryJson from "../img/images.json"
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
-// import "simplelightbox/dist/simple-lightbox.min.js"
 
 const galleryList = document.querySelector('.gallery');
 
-galleryList.insertAdjacentHTML("beforeend", createMarkup(images));
+galleryList.insertAdjacentHTML("beforeend", createMarkup(arrGalleryJson));
 
 function createMarkup(arrGallery) {
   return arrGallery.map(({ preview, original, description }) => `
@@ -23,8 +22,10 @@ function createMarkup(arrGallery) {
 
 
 const lightbox = new SimpleLightbox('.gallery a', {
+  overlayOpacity: 0,
   captionsData: 'alt',
   captionDelay: 250,
+  className: 'simple-lightbox',
 });
 
 

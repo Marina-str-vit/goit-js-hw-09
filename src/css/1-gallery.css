@@ -1,0 +1,34 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+display: flex;
+flex-wrap: wrap;
+width: 1128px;
+margin: 0 156px;
+padding-inline-start: 0;
+gap: 24px;
+}
+a:hover,
+a:focus {
+  color: #747bff;
+}
+
+.gallery-image {
+width: 360px;
+height: 200px;
+}
+
+.simple-lightbox{
+  background-color: #2E2F42;
+}
+.sl-wrapper .sl-navigation button.sl-next{
+  color: #FFFFFF;
+}
+.sl-wrapper .sl-navigation button.sl-prev{
+      color: #FFFFFF;
+}
+.sl-wrapper button.sl-close {
+color: #FFFFFF;}
