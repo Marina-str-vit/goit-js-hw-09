@@ -40,12 +40,13 @@ nav {
 .nav-list {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 40px;
 }
 .nav-link {
   position: relative;
   display: block;
+  font-size: 20px;
   font-weight: 800;
   letter-spacing: 0.02em;
   transition: 200ms ease-in;
